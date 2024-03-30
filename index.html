@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>街区表示板メーカー</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <p class="top-con">街区表示板メーカー</p>
+        <div class="main-body">
+        <svg height="550" width="150" xmlns="http://www.w3.org/2000/svg">
+
+            <rect x="0" y="0" width="100%" height="100%" rx="20" ry="20" fill="#205499" id="rect-edit" />
+
+            <g id="main-contents" fill="#fff" font-size="20px"
+                text-anchor="middle">
+                <!-- メインフォントコンテナ -->
+                <g class="main-font">
+                    <text x="50%" y="50" font-size="1.5rem" id="Ku" padding-top="10px">
+                        <tspan id="tspan-ku">港北区</tspan>
+                    </text>
+
+                    <text x="50%" y="230" font-size="2.5em" id="tyome" writing-mode="vertical-lr" letter-spacing="5px">
+                        <tspan id="tspan-tyome">新横浜三丁目</tspan>
+                    </text>
+
+
+                    <text x="50%" y="440" font-size="3.2rem" id="banti">
+                        <tspan id="tspan-banti">10</tspan>
+                    </text>
+
+                    <text x="10%" y="470" font-size="1rem" id="roma" text-anchor="start" textLength="120">
+                        <tspan id="tspan-roma1">sin-yokohama</tspan>
+                    </text>
+
+                    <text x="10%" y="490" font-size="1rem" id="roma" text-anchor="start">
+                        <tspan id="tspan-roma2">santyome</tspan>
+                    </text>
+
+
+                    <text x="10%" y="510" font-size="1rem" id="roma" text-anchor="start">
+                        <tspan id="tspan-roma3">ju</tspan>
+                    </text>
+
+                </g>
+            </g>
+        </svg>
+        </div>
+        <div class="edit-con">
+            <form>
+                <h1>看板背景編集</h1>
+                    <input type="color" id="incolor">
+                    <button type="button" id="colorbutton">変更</button>
+                    <button type="button" id="color-reset">リセット</button>
+                    <h1>文字色編集</h1>
+                        <input type="color" id="fontcolor">
+                        <button type="button" id="fontbutton">変更</button>
+                        <button type="button" id="font-reset">リセット</button>
+                        <div class="font-box">
+                            <h1>文字変更</h1>
+                            <p>区を入力</p>
+                            <input type="text" id="edit-ku" placeholder="例:港北区"><br>
+                            <p>丁目を入力</p>
+
+                            <input type="text" id="edit-tyome" placeholder="例:新横浜三丁目">
+                            <p>番地を入力</p>
+
+                            <input type="text" id="edit-ban" placeholder="例:10">
+
+                            <p>アルファベットで入力</p>
+
+                            <input type="text" id="edit-roma1" placeholder="1行目 例:sin-yokohama">
+                            <input type="text" id="edit-roma2" placeholder="2行目 例:santyome">
+
+                            <input type="text" id="edit-roma3" placeholder="3行目 例:ju">
+
+                            <button type="button" id="edit-ok">決定</button>
+                            <button type="button" id="edit-reset">リセット</button>
+                        </div>
+                        <button type="button" id="download-button">ダウンロード</button>
+
+            </form>
+        </div>
+        <footer>
+
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/server.js"></script>
+</body>
+
+</html>

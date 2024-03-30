@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+
+
+html {
+    font-family: 'Noto Sans Jp';
+}
+
+
+
+h1 {
+    font-size: 1.5rem;
+    margin: 30px 0 20px;
+    padding: 15p 0;
+    width: 250px;
+}
+
+
+
+.top-con {
+    padding: 10px 5px;
+    font-size: 2rem;
+    background-color: #205499;
+    color: #fff;
+}
+
+
+/*--街区掲示板本体-*/
+.main-body {
+    height: 550px;
+    width: 150px;
+    background-color: #205499;
+    margin: 10px auto;
+    color: #fff;
+    border-radius: 20px;
+
+}
+
+
+#banti {
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+#roma {
+    font-size: 20px;
+    width: 3px;
+    margin-left: 20px;
+}
+
+#incolor,
+#fontcolor {
+    width: 100px;
+    height: 100px;
+}
+
+#incolor,
+#colorbutton,
+#color-reset,
+#fontbutton,
+#font-reset {
+    font-size: 20px;
+}
+
+
+/*-掲示板編集-*/
+.edit-con {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+h1::before {
+    content: '';
+    padding: 10px 10px;
+    margin-right: 5px;
+    background-color: #205499;
+}
+
+.font-box h4 {
+    margin-bottom: 25px;
+}
+
+.font-box p::before {
+    content: '';
+    padding: 0 5px;
+    margin-right: 5px;
+    background-color: #2b71cc;
+}
+
+.font-box p {
+    margin: 20px 0 10px;
+    font-size: 1.1rem;
+    background-color: 205499;
+}
+
+.font-box input[type=text] {
+    padding: 10px 0;
+    width: 100%;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+#edit-ok,
+#download-button {
+    height: 30px;
+    width: 150px;
+    margin: 15px 0;
+}
+
+#edit-roma1,
+#edit-roma2,
+#edit-roma3 {
+    margin: 10px 0;
+}
+
+footer {
+    height: 50px;
+    background-color: #205499;
+}
+
+@media screen and (max-width:400px) {
+    #tyome{
+        letter-spacing: -15px;
+    }
+    
+}
